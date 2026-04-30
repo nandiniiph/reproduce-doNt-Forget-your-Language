@@ -1,0 +1,14 @@
+# model & checkpoint
+outputs/*/checkpoint-*
+outputs/*/runs/
+
+# python
+__pycache__/
+*.pyc
+
+# jupyter
+.ipynb_checkpoints/
+
+# system
+.DS_Store
+
