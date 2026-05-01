@@ -3,7 +3,7 @@
 echo "===== JIGSAW BASELINE ====="
 mkdir -p outputs/jigsaw/none
 python src/nfl.py \
---train_file data/biased_jigsaw_train.csv \
+--train_file data/biased_jigsaw_balance_train.csv \
 --model_name roberta-base \
 --reg_method None \
 --seed 24 \
@@ -14,7 +14,7 @@ python src/nfl.py \
 echo "===== JIGSAW NFL-F ====="
 mkdir -p outputs/jigsaw/nfl_f
 python src/nfl.py \
---train_file data/biased_jigsaw_train.csv \
+--train_file data/biased_jigsaw_balance_train.csv \
 --model_name roberta-base \
 --reg_method NFL-F \
 --reg_factor 0.1 \
@@ -26,7 +26,7 @@ python src/nfl.py \
 echo "===== JIGSAW NFL-CO ====="
 mkdir -p outputs/jigsaw/nfl_co
 python src/nfl.py \
---train_file data/biased_jigsaw_train.csv \
+--train_file data/biased_jigsaw_balance_train.csv \
 --model_name roberta-base \
 --reg_method NFL-CO \
 --reg_factor 0.1 \
@@ -38,7 +38,7 @@ python src/nfl.py \
 echo "===== JIGSAW NFL-CP ====="
 mkdir -p outputs/jigsaw/nfl_cp
 python src/nfl.py \
---train_file data/biased_jigsaw_train.csv \
+--train_file data/biased_jigsaw_balance_train.csv \
 --model_name roberta-base \
 --reg_method NFL-CP \
 --reg_factor 0.1 \
@@ -50,7 +50,7 @@ python src/nfl.py \
 echo "===== JIGSAW NFL-PT ====="
 mkdir -p outputs/jigsaw/nfl_pt
 python src/nfl.py \
---train_file data/biased_jigsaw_train.csv \
+--train_file data/biased_jigsaw_balance_train.csv \
 --model_name roberta-base \
 --reg_method NFL-PT \
 --reg_factor 0.1 \

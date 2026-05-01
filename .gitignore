@@ -1,4 +1,35 @@
-# model & checkpoint
+# =========================
+# MODEL & TRAINING OUTPUT
+# =========================
+outputs/
+checkpoints/
+*.bin
+*.pt
+
+# =========================
+# LOG & RESULT FILES
+# =========================
+*.log
+*.out
+
+
+
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+
+# =========================
+# JUPYTER
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# SYSTEM
+# =========================
+.DS_Store# model & checkpoint
 outputs/*/checkpoint-*
 outputs/*/runs/
 
